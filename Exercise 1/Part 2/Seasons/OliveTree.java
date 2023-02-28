@@ -1,6 +1,5 @@
 public class OliveTree extends Tree {
 
-
     OliveTree(int height, Season season) {
         super(height,season,Color.GREEN);
     }
