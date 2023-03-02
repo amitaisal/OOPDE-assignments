@@ -1,10 +1,19 @@
 public class FigTree extends Tree {
 
+    /**
+     * A constructor. It initializes the height, season, and color of the FigTree.
+     * @param height the height of the FigTree
+     * @param season the season the FigTree is in
+     */
     FigTree(int height, Season season) {
-        super(height,season,null);
+        super(height, season, null);
         setColor();
     }
 
+    /**
+     * Returns a string representation of the tree.
+     * @return A string representation of the tree.
+     */
     @Override
     public String toString() {
         String str = "";
@@ -17,6 +26,9 @@ public class FigTree extends Tree {
                 " and " + color + '\n';
     }
 
+    /**
+     * This method changes the season of the FigTree and updates its color and height accordingly.
+     */
     @Override
     public void changeSeason() {
         super.changeSeason();
@@ -24,6 +36,9 @@ public class FigTree extends Tree {
         changeHeight();
     }
 
+    /**
+     * This method sets the leaves color of the FigTree depending on the current season.
+     */
     private void setColor() {
         if (super.getCurrentSeason() == Season.WINTER)
             leavesColor = null;
@@ -35,6 +50,9 @@ public class FigTree extends Tree {
             leavesColor = Color.YELLOW;
     }
 
+    /**
+     * This method changes the height of the FigTree depending on the current season.
+     */
     private void changeHeight() {
         if (super.getCurrentSeason() == Season.WINTER)
             height = height + 20;

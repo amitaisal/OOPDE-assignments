@@ -1,6 +1,7 @@
 public class B implements C{
-    public B(int i) {
-        System.out.println("B constructor");
+    int number;
+    public B(int number) {
+        this.number = number;
     }
 
     @Override

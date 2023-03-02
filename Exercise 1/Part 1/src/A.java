@@ -1,6 +1,5 @@
 public class A implements C{
     public A(){
-        System.out.println("A constructor");
     }
     @Override
     public void f1() {
