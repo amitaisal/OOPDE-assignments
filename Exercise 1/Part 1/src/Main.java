@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-
         int x = 5;
         String y = "hello";
         B b1 = new B(100);
@@ -12,5 +11,4 @@ public class Main {
         arrC[0].f2();
         ((A) arrC[1]).f3();
     }
-
 }
